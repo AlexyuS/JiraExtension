@@ -1,27 +1,31 @@
 window.onload = () => {
-    console.log("Script activated only for " + document.URL);
-    sendUserInformation();
+    console.log('Script activated only for ' + document.URL);
+    setInterval(function() {
+        if (window.location.href.indexOf('contact-info') > -1) {
+            sendUserInformation();
+        }
+    }, 1000);
 }
 
-
 function sendUserInformation() {
-    var firstName;
-    var lastName;
-    var name = document.querySelector("#pv-contact-info")
-    if(name!==null){
-        name=name.textContent.replaceAll("\n", "").trim().split(" ");
-        firstName=name[0];
-        lastName= name[1];
-    }else{
-        return;
+    const phoneNr = getTextContent('.ci-phone > ul > li > .t-normal') || '';
+    const emailAddress = getTextContent('.ci-email > div > a')[0] || '';
+    const name = getTextContent('#pv-contact-info');
+    let firstName;
+    let lastName;
+
+    if (name) {
+        firstName = name[0];
+        lastName = name[1];
     }
-    var phoneNr= document.querySelector(".ci-phone > ul >li>.t-normal").textContent.replaceAll("\n", "");
-    if(phoneNr!==null){
-        phoneNr=phoneNr.trim();
+
+    chrome.runtime.sendMessage({ firstName, lastName, phoneNr, emailAddress });
+}
+
+function getTextContent(querySelector) {
+    const selector = document.querySelector(querySelector);
+
+    if (selector) {
+        return selector.textContent.replaceAll('\n', '').trim().split(' ');
     }
-    var email=document.querySelector(".ci-email > div > a").textContent.replaceAll("\n", "").trim();
-    if(email!==null){
-        email=email.trim();
-    }
-    chrome.runtime.sendMessage({firstName:firstName,lastName:lastName,phoneNr: phoneNr, email: email});
 }
