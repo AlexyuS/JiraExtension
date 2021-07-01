@@ -1,27 +1,23 @@
-window.onload = () => {
-    console.log("Script activated only for " + document.URL);
-    sendUserInformation();
-}
 
-
+console.log("Script activated only for " + document.URL);
+sendUserInformation();
 function sendUserInformation() {
-    var firstName;
-    var lastName;
-    var name = document.querySelector("#pv-contact-info")
-    if(name!==null){
-        name=name.textContent.replaceAll("\n", "").trim().split(" ");
-        firstName=name[0];
-        lastName= name[1];
-    }else{
+    if(document.querySelector("#pv-contact-info")===null){
         return;
     }
-    var phoneNr= document.querySelector(".ci-phone > ul >li>.t-normal").textContent.replaceAll("\n", "");
-    if(phoneNr!==null){
-        phoneNr=phoneNr.trim();
-    }
-    var email=document.querySelector(".ci-email > div > a").textContent.replaceAll("\n", "").trim();
-    if(email!==null){
-        email=email.trim();
-    }
-    chrome.runtime.sendMessage({firstName:firstName,lastName:lastName,phoneNr: phoneNr, email: email});
+    var firstName= document.querySelector("#pv-contact-info").textContent.trim().split(" ")[0];
+    var lastName= document.querySelector("#pv-contact-info").textContent.trim().split(" ")[1];
+    var phoneNr = document.querySelector(".ci-phone > ul >li>span").textContent.trim();
+    var email = document.querySelector(".ci-email > div >a").textContent.trim();
+    chrome.runtime.sendMessage({firstName: firstName, lastName: lastName, phoneNr: phoneNr, email: email});
 }
+
+function downloadLink(){
+    var downloadLink;
+    chrome.runtime.sendMessage({
+        downloadLink:downloadLink
+    })
+}
+
+
+

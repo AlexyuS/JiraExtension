@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is my very first extension",
   "manifest_version": 3,
-  "permissions": ["bookmarks","tabs","storage"],
+  "permissions": ["tabs","webNavigation","scripting","activeTab","downloads"],
   "content_scripts": [
     {
       "js": ["content.js","jquery-3.6.0.js"],
@@ -12,6 +12,11 @@
   ],
   "action": {
     "default_popup": "popup.html"
-  }
-
+  },
+  "background": {
+    "service_worker":"popup.js"
+  },
+  "host_permissions": [
+    "https://www.linkedin.com/in/*"
+  ]
 }
