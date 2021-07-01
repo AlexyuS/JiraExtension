@@ -7,8 +7,15 @@ function sendUserInformation() {
     }
     var firstName= document.querySelector("#pv-contact-info").textContent.trim().split(" ")[0];
     var lastName= document.querySelector("#pv-contact-info").textContent.trim().split(" ")[1];
-    var phoneNr = document.querySelector(".ci-phone > ul >li>span").textContent.trim();
-    var email = document.querySelector(".ci-email > div >a").textContent.trim();
+
+    var phoneNr = document.querySelector(".ci-phone > ul >li>span");
+    if(phoneNr!==null){
+        phoneNr = phoneNr.textContent.trim();
+    }
+    var email = document.querySelector(".ci-email > div >a");
+    if(email!==null){
+        email=email.textContent.trim();
+    }
     chrome.runtime.sendMessage({firstName: firstName, lastName: lastName, phoneNr: phoneNr, email: email});
 }
 

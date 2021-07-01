@@ -1,4 +1,4 @@
-importScripts("jquery-3.6.0.js")
+
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         const downloadLink = request.downloadLink;
