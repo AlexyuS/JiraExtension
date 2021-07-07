@@ -1,3 +1,33 @@
-.chrome-extension-container {
-    width: 300px;
+#chrome-extension-container {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jira-stage {
+    padding: 10px;
+    background-color: #e67e22;
+    color: #2c3e50;
+    border: 0;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.jira-stage:last-child {
+    margin-bottom: 0;
+}
+
+.jira-stage:hover {
+    background-color: #d35400;
+    color: white;
+    cursor: pointer;
+}
+
+.jira-stage .stage-icon {
+    color: #2c3e50;
+    margin: 0 10px;
+}
+
+.jira-stage:hover .stage-icon {
+    color: white;
 }
