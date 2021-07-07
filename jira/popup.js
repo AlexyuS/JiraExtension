@@ -1,4 +1,3 @@
-
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         const downloadLink = request.downloadLink;
@@ -13,12 +12,12 @@ chrome.runtime.onMessage.addListener(
     })
 
 
-chrome.webNavigation.onHistoryStateUpdated.addListener(function (details) {
-     chrome.scripting.executeScript({
-         target: {tabId: details.tabId},
-         files: ['content.js']
-     });
-})
+chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
+    chrome.scripting.executeScript({
+        target: { tabId: details.tabId },
+        files: ['content.js']
+    });
+});
 
 
 function populateView(user) {
@@ -29,15 +28,15 @@ function populateView(user) {
     $("#phoneNr").text("PhoneNr:" + user.phoneNr);
 }
 
-function login(){
+function login() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "http://localhost:8080/rest/api/2/issue/createmeta", true);
     xhttp.setRequestHeader("Authorization","Basic " + btoa(alexandru.hirzoiu + ":" + password));
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.onreadystatechange = function(response) {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             // Typical action to be performed when the document is ready:
-           console.log(response);
+            console.log(response);
         }
     };
     xhttp.send();

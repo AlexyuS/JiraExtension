@@ -3,17 +3,45 @@
     <head>
         <script type="application/javascript" src="popup.js"></script>
         <script type="application/javascript" src="jquery-3.6.0.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="popup.css" />
     </head>
 
     <body>
-        <section class="chrome-extension-container">
-            <ul class="jira-links">
-                <li><label id="firstName">FirstName</label></li>
-                <li><label id="lastName">LastName</label></li>
-                <li><label id="emailAddress">EmailAddress</label></li>
-                <li><label id="phoneNr">PhoneNr</label></li>
-            </ul>
+        <section id="chrome-extension-container">
+            <!-- <li><label id="firstName">FirstName</label></li>
+            <li><label id="lastName">LastName</label></li>
+            <li><label id="emailAddress">EmailAddress</label></li>
+            <li><label id="phoneNr">PhoneNr</label></li> -->
+            <button class="jira-stage" id="newInterview">
+                <i class="fa fa-upload stage-icon"></i>New Interview
+            </button>
+            <button class="jira-stage" id="hrInterview">
+                <i class="fa fa-address-card stage-icon"></i>HR Interview
+            </button>
+            <button class="jira-stage" id="requestedForTechnical">
+                <i class="fa fa-calendar-alt stage-icon"></i>Requested for Technical
+            </button>
+            <button class="jira-stage" id="technicalInterview">
+                <i class="fa fa-cogs stage-icon"></i>Technical Interview
+            </button>
+            <button class="jira-stage" id="technicalInterviewDone">
+                <i class="fa fa-calendar-check stage-icon"></i>Technical Interview Done
+            </button>
+            <button class="jira-stage" id="requestedForFinal">
+                <i class="fa fa-bell stage-icon"></i>Requested for Final
+            </button>
+            <button class="jira-stage" id="finalInterview">
+                <i class="fa fa-tasks stage-icon"></i>Final Interview
+            </button>
+            <button class="jira-stage" id="finalInterviewDone">
+                <i class="fa fa-user-check stage-icon"></i>Final Interview Done
+            </button>
+            <button class="jira-stage" id="decision">
+                <i class="fa fa-check stage-icon"></i>Decision
+            </button>
         </section>
+
+        <script type="application/javascript" src="updateJira.js"></script>
     </body>
 </html>
