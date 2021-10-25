@@ -1,0 +1,290 @@
+{
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "285502",
+  "self": "https://recruitment.endava.com/rest/api/2/issue/285502",
+  "key": "CD-113112",
+  "fields": {
+    "issuetype": {
+      "self": "https://recruitment.endava.com/rest/api/2/issuetype/10100",
+      "id": "10100",
+      "description": "Type representing a candidate involved in the recruitment process",
+      "iconUrl": "https://recruitment.endava.com/secure/viewavatar?size=xsmall&avatarId=11202&avatarType=issuetype",
+      "name": "Candidate",
+      "subtask": false,
+      "avatarId": 11202
+    },
+    "project": {
+      "self": "https://recruitment.endava.com/rest/api/2/project/10704",
+      "id": "10704",
+      "key": "CD",
+      "name": "Candidates Database",
+      "projectTypeKey": "business",
+      "avatarUrls": {
+        "48x48": "https://recruitment.endava.com/secure/projectavatar?avatarId=10324",
+        "24x24": "https://recruitment.endava.com/secure/projectavatar?size=small&avatarId=10324",
+        "16x16": "https://recruitment.endava.com/secure/projectavatar?size=xsmall&avatarId=10324",
+        "32x32": "https://recruitment.endava.com/secure/projectavatar?size=medium&avatarId=10324"
+      },
+      "projectCategory": {
+        "self": "https://recruitment.endava.com/rest/api/2/projectCategory/10100",
+        "id": "10100",
+        "description": "",
+        "name": "Candidate Project"
+      }
+    },
+    "customfield_12211": null,
+    "customfield_12210": null,
+    "customfield_12213": null,
+    "resolution": null,
+    "customfield_12212": null,
+    "customfield_11401": null,
+    "customfield_11513": null,
+    "customfield_11711": null,
+    "customfield_10105": null,
+    "customfield_11512": null,
+    "customfield_11710": null,
+    "customfield_10700": null,
+    "customfield_12208": null,
+    "customfield_11712": null,
+    "customfield_10900": null,
+    "customfield_12209": null,
+    "resolutiondate": null,
+    "workratio": -1,
+    "lastViewed": "2021-07-20T08:23:57.940+0000",
+    "watches": {
+      "self": "https://recruitment.endava.com/rest/api/2/issue/CD-113112/watchers",
+      "watchCount": 1,
+      "isWatching": true
+    },
+    "created": "2021-07-20T08:17:57.120+0000",
+    "priority": {
+      "self": "https://recruitment.endava.com/rest/api/2/priority/3",
+      "iconUrl": "https://recruitment.endava.com/images/icons/priorities/medium.svg",
+      "name": "Medium",
+      "id": "3"
+    },
+    "customfield_10100": "0|i1asgn:",
+    "customfield_10101": null,
+    "customfield_11511": "{\"fieldId\":\"11511\",\"fieldConfigId\":\"11\",\"jibrokMessageKey\":\"true\",\"jibrokMessageIsDefault\":\"true\"}",
+    "labels": [],
+    "customfield_11510": null,
+    "customfield_12005": null,
+    "customfield_10214": "2021-07-20",
+    "customfield_11503": null,
+    "customfield_11704": null,
+    "customfield_11506": null,
+    "customfield_11505": null,
+    "customfield_11706": null,
+    "customfield_11705": null,
+    "customfield_11708": null,
+    "customfield_11509": null,
+    "customfield_11707": null,
+    "issuelinks": [
+      {
+        "id": "308709",
+        "self": "https://recruitment.endava.com/rest/api/2/issueLink/308709",
+        "type": {
+          "id": "10300",
+          "name": "Candidate -Requisition Contacted",
+          "inward": "Contacted for Requisition",
+          "outward": "Candidates Contacted",
+          "self": "https://recruitment.endava.com/rest/api/2/issueLinkType/10300"
+        },
+        "inwardIssue": {
+          "id": "243432",
+          "key": "TMDRP-2106",
+          "self": "https://recruitment.endava.com/rest/api/2/issue/243432",
+          "fields": {
+            "summary": "SysOps Engineer (future DevOps)",
+            "status": {
+              "self": "https://recruitment.endava.com/rest/api/2/status/10108",
+              "description": "",
+              "iconUrl": "https://recruitment.endava.com/images/icons/statuses/generic.png",
+              "name": "0.4. Requisition done",
+              "id": "10108",
+              "statusCategory": {
+                "self": "https://recruitment.endava.com/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "https://recruitment.endava.com/rest/api/2/priority/3",
+              "iconUrl": "https://recruitment.endava.com/images/icons/priorities/medium.svg",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://recruitment.endava.com/rest/api/2/issuetype/10108",
+              "id": "10108",
+              "description": "",
+              "iconUrl": "https://recruitment.endava.com/secure/viewavatar?size=xsmall&avatarId=11208&avatarType=issuetype",
+              "name": "Requisition",
+              "subtask": false,
+              "avatarId": 11208
+            }
+          }
+        }
+      }
+    ],
+    "customfield_11709": null,
+    "assignee": {
+      "self": "https://recruitment.endava.com/rest/api/2/user?username=dmioc",
+      "name": "dmioc",
+      "key": "JIRAUSER18300",
+      "emailAddress": "Denisa.Mioc@endava.com",
+      "avatarUrls": {
+        "48x48": "https://recruitment.endava.com/secure/useravatar?ownerId=JIRAUSER18300&avatarId=10904",
+        "24x24": "https://recruitment.endava.com/secure/useravatar?size=small&ownerId=JIRAUSER18300&avatarId=10904",
+        "16x16": "https://recruitment.endava.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER18300&avatarId=10904",
+        "32x32": "https://recruitment.endava.com/secure/useravatar?size=medium&ownerId=JIRAUSER18300&avatarId=10904"
+      },
+      "displayName": "Denisa Andreea Mioc",
+      "active": true,
+      "timeZone": "Europe/Bucharest"
+    },
+    "updated": "2021-07-20T08:23:56.977+0000",
+    "status": {
+      "self": "https://recruitment.endava.com/rest/api/2/status/10100",
+      "description": "The candidate was contacted",
+      "iconUrl": "https://recruitment.endava.com/images/icons/statuses/generic.png",
+      "name": "1.2. Contact Candidate",
+      "id": "10100",
+      "statusCategory": {
+        "self": "https://recruitment.endava.com/rest/api/2/statuscategory/4",
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "In Progress"
+      }
+    },
+    "description": null,
+    "customfield_11100": null,
+    "customfield_10210": null,
+    "customfield_10211": null,
+    "customfield_10212": null,
+    "customfield_10213": null,
+    "customfield_10203": null,
+    "customfield_12107": null,
+    "customfield_10204": null,
+    "customfield_10600": null,
+    "customfield_11413": "{\"fieldId\":\"11413\",\"fieldConfigId\":\"3\",\"jibrokMessageKey\":\"true\",\"jibrokMessageIsDefault\":\"true\"}",
+    "customfield_12106": null,
+    "customfield_10205": null,
+    "customfield_10206": null,
+    "customfield_10602": null,
+    "attachment": [],
+    "customfield_10207": null,
+    "customfield_10405": null,
+    "customfield_10208": null,
+    "customfield_10209": null,
+    "summary": "test jira",
+    "creator": {
+      "self": "https://recruitment.endava.com/rest/api/2/user?username=dmioc",
+      "name": "dmioc",
+      "key": "JIRAUSER18300",
+      "emailAddress": "Denisa.Mioc@endava.com",
+      "avatarUrls": {
+        "48x48": "https://recruitment.endava.com/secure/useravatar?ownerId=JIRAUSER18300&avatarId=10904",
+        "24x24": "https://recruitment.endava.com/secure/useravatar?size=small&ownerId=JIRAUSER18300&avatarId=10904",
+        "16x16": "https://recruitment.endava.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER18300&avatarId=10904",
+        "32x32": "https://recruitment.endava.com/secure/useravatar?size=medium&ownerId=JIRAUSER18300&avatarId=10904"
+      },
+      "displayName": "Denisa Andreea Mioc",
+      "active": true,
+      "timeZone": "Europe/Bucharest"
+    },
+    "customfield_12220": "[TMDRP-2106] SysOps Engineer (future DevOps)",
+    "reporter": {
+      "self": "https://recruitment.endava.com/rest/api/2/user?username=dmioc",
+      "name": "dmioc",
+      "key": "JIRAUSER18300",
+      "emailAddress": "Denisa.Mioc@endava.com",
+      "avatarUrls": {
+        "48x48": "https://recruitment.endava.com/secure/useravatar?ownerId=JIRAUSER18300&avatarId=10904",
+        "24x24": "https://recruitment.endava.com/secure/useravatar?size=small&ownerId=JIRAUSER18300&avatarId=10904",
+        "16x16": "https://recruitment.endava.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER18300&avatarId=10904",
+        "32x32": "https://recruitment.endava.com/secure/useravatar?size=medium&ownerId=JIRAUSER18300&avatarId=10904"
+      },
+      "displayName": "Denisa Andreea Mioc",
+      "active": true,
+      "timeZone": "Europe/Bucharest"
+    },
+    "customfield_10000": "{}",
+    "customfield_12100": "test jira",
+    "customfield_12103": null,
+    "customfield_10200": null,
+    "customfield_12102": null,
+    "customfield_10201": {
+      "self": "https://recruitment.endava.com/rest/api/2/customFieldOption/10114",
+      "value": "TMD - Timisoara",
+      "id": "10114",
+      "disabled": false
+    },
+    "customfield_12105": null,
+    "customfield_10202": null,
+    "customfield_10400": [
+      {
+        "id": "243432",
+        "key": "TMDRP-2106",
+        "self": "https://recruitment.endava.com/rest/api/2/issue/243432",
+        "fields": {
+          "summary": "SysOps Engineer (future DevOps)",
+          "status": {
+            "self": "https://recruitment.endava.com/rest/api/2/status/10108",
+            "description": "",
+            "iconUrl": "https://recruitment.endava.com/images/icons/statuses/generic.png",
+            "name": "0.4. Requisition done",
+            "id": "10108",
+            "statusCategory": {
+              "self": "https://recruitment.endava.com/rest/api/2/statuscategory/3",
+              "id": 3,
+              "key": "done",
+              "colorName": "green",
+              "name": "Done"
+            }
+          },
+          "priority": {
+            "self": "https://recruitment.endava.com/rest/api/2/priority/3",
+            "iconUrl": "https://recruitment.endava.com/images/icons/priorities/medium.svg",
+            "name": "Medium",
+            "id": "3"
+          },
+          "issuetype": {
+            "self": "https://recruitment.endava.com/rest/api/2/issuetype/10108",
+            "id": "10108",
+            "description": "",
+            "iconUrl": "https://recruitment.endava.com/secure/viewavatar?size=xsmall&avatarId=11208&avatarType=issuetype",
+            "name": "Requisition",
+            "subtask": false,
+            "avatarId": 11208
+          }
+        }
+      }
+    ],
+    "customfield_11411": null,
+    "customfield_12104": "RON",
+    "customfield_11403": "test",
+    "customfield_11600": {
+      "self": "https://recruitment.endava.com/rest/api/2/customFieldOption/11300",
+      "value": "LinkedIn",
+      "id": "11300",
+      "disabled": false
+    },
+    "customfield_11801": null,
+    "customfield_12219": "1.2. CONTACT CANDIDATE",
+    "customfield_11404": "jira",
+    "customfield_11602": "{\"fieldId\":\"11602\",\"fieldConfigId\":\"15\",\"jibrokMessageKey\":\"true\",\"jibrokMessageIsDefault\":\"true\"}",
+    "customfield_11800": null,
+    "customfield_11606": null,
+    "customfield_11609": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    }
+  }
+}

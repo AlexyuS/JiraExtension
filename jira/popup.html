@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script type="application/javascript" src="popup.js"></script>
-        <script type="application/javascript" src="jquery-3.6.0.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <link rel="stylesheet" href="popup.css" />
-    </head>
+<head>
+    <link rel="stylesheet" href="popup.css"/>
+    <link rel="stylesheet" href="login.css"/>
+</head>
 
-    <body>
-        <section id="chrome-extension-container">
-            <!-- <li><label id="firstName">FirstName</label></li>
-            <li><label id="lastName">LastName</label></li>
-            <li><label id="emailAddress">EmailAddress</label></li>
-            <li><label id="phoneNr">PhoneNr</label></li> -->
-            <button class="jira-stage" id="newInterview">
-                <i class="fa fa-upload stage-icon"></i>New Interview
-            </button>
-            <button class="jira-stage" id="hrInterview">
-                <i class="fa fa-address-card stage-icon"></i>HR Interview
-            </button>
-            <button class="jira-stage" id="requestedForTechnical">
-                <i class="fa fa-calendar-alt stage-icon"></i>Requested for Technical
-            </button>
-            <button class="jira-stage" id="technicalInterview">
-                <i class="fa fa-cogs stage-icon"></i>Technical Interview
-            </button>
-            <button class="jira-stage" id="technicalInterviewDone">
-                <i class="fa fa-calendar-check stage-icon"></i>Technical Interview Done
-            </button>
-            <button class="jira-stage" id="requestedForFinal">
-                <i class="fa fa-bell stage-icon"></i>Requested for Final
-            </button>
-            <button class="jira-stage" id="finalInterview">
-                <i class="fa fa-tasks stage-icon"></i>Final Interview
-            </button>
-            <button class="jira-stage" id="finalInterviewDone">
-                <i class="fa fa-user-check stage-icon"></i>Final Interview Done
-            </button>
-            <button class="jira-stage" id="decision">
-                <i class="fa fa-check stage-icon"></i>Decision
-            </button>
-        </section>
-
-        <script type="application/javascript" src="updateJira.js"></script>
-    </body>
+<body>
+<!--<section id="chrome-extension-login">-->
+<!--    <div class="login">-->
+<!--        <input type="text" placeholder="Username" id="username">-->
+<!--        <input type="password" placeholder="Password" id="password">-->
+<!--        <input id="login" type="submit" value="Sign In">-->
+<!--    </div>-->
+<!--    <div class="shadow"></div>-->
+<!--</section>-->
+<!--<section id="chrome-extension-add-user" class="hidden">-->
+<!--    <button class="jira-stage" id="addUser">-->
+<!--        <div class="fa fa-upload stage-icon"></div>-->
+<!--    </button>-->
+<!--</section>-->
+<section id="chrome-extension-container">
+    <button class="jira-stage" id="newInterview" >
+        <div class="newInterview resizedBackground"></div>
+    </button>
+    <button class="jira-stage" id="hrInterview">
+        <div class="hrInterview resizedBackground"></div>
+    </button>
+    <button class="jira-stage" id="requestedForTechnical">
+        <div class="requested resizedBackground"></div>
+    </button>
+    <button class="jira-stage" id="technicalInterview">
+        <div class="technicalInterview resizedBackground"></div>
+    </button>
+    <button class="jira-stage" id="technicalInterviewDone">
+        <div class="done resizedBackground"></div>
+    </button>
+    <button class="jira-stage" id="requestedForFinal">
+        <div class="requested resizedBackground"></div>
+    </button>
+    <button class="jira-stage" id="finalInterview">
+        <div class="finalInterview resizedBackground"></div>
+    </button>
+    <button class="jira-stage" id="finalInterviewDone">
+        <div class="done resizedBackground"></div>
+    </button>
+    <button class="jira-stage" id="decision">
+        <div class="decision resizedBackground"></div>
+    </button>
+</section>
+</body>
+<footer>
+    <script type="application/javascript" src="jquery-3.6.0.js"></script>
+    <script type="application/javascript" src="updateJira.js"></script>
+    <script type="application/javascript" src="popup.js"></script>
+</footer>
 </html>

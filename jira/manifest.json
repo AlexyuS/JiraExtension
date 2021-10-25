@@ -1,13 +1,13 @@
 {
-  "name": "my first extension",
+  "name": "JiraLink",
   "version": "1.0.0",
-  "description": "This is my very first extension",
+  "description": "Prototype of a future chrome extension for linkedin",
   "manifest_version": 3,
   "permissions": ["tabs","webNavigation","scripting","activeTab","downloads"],
   "content_scripts": [
     {
       "js": ["content.js","jquery-3.6.0.js"],
-      "matches": ["https://www.linkedin.com/in/*"]
+      "matches": ["https://www.linkedin.com/in/*/"]
     }
   ],
   "action": {

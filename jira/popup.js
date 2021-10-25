@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener(
             phoneNr: request.phoneNr,
             emailAddress: request.email
         }
-        populateView(user);
+
         login();
     })
 
@@ -18,6 +18,17 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
         files: ['content.js']
     });
 });
+
+function notifyNewUserInsertion(){
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+        chrome.tabs.sendMessage(tabs[0].id, {action: "open_dialog_box"}, function(response) {});
+    });
+}
+
+
+chrome.downloads.onCreated.addListener(function(data){
+ getPdf(data.finalUrl);
+})
 
 
 function populateView(user) {
@@ -41,3 +52,16 @@ function login() {
     };
     xhttp.send();
 }
+
+function getPdf(url){
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", url, true);
+    xhttp.onreadystatechange = function(response) {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(response);
+        }
+    };
+    xhttp.send();
+}
+
+

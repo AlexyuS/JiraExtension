@@ -1,0 +1,278 @@
+{
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "285506",
+  "self": "https://recruitment.endava.com/rest/api/2/issue/285506",
+  "key": "TMDRP-3192",
+  "fields": {
+    "issuetype": {
+      "self": "https://recruitment.endava.com/rest/api/2/issuetype/10109",
+      "id": "10109",
+      "description": "",
+      "iconUrl": "https://recruitment.endava.com/secure/viewavatar?size=xsmall&avatarId=11203&avatarType=issuetype",
+      "name": "Interview",
+      "subtask": false,
+      "avatarId": 11203
+    },
+    "customfield_12010": null,
+    "project": {
+      "self": "https://recruitment.endava.com/rest/api/2/project/10403",
+      "id": "10403",
+      "key": "TMDRP",
+      "name": "TMD Recruitment Process",
+      "projectTypeKey": "business",
+      "avatarUrls": {
+        "48x48": "https://recruitment.endava.com/secure/projectavatar?avatarId=10324",
+        "24x24": "https://recruitment.endava.com/secure/projectavatar?size=small&avatarId=10324",
+        "16x16": "https://recruitment.endava.com/secure/projectavatar?size=xsmall&avatarId=10324",
+        "32x32": "https://recruitment.endava.com/secure/projectavatar?size=medium&avatarId=10324"
+      },
+      "projectCategory": {
+        "self": "https://recruitment.endava.com/rest/api/2/projectCategory/10000",
+        "id": "10000",
+        "description": "",
+        "name": "Recruitment Project"
+      }
+    },
+    "customfield_10230": null,
+    "customfield_12211": null,
+    "customfield_10231": null,
+    "customfield_12210": null,
+    "customfield_10232": null,
+    "customfield_12213": null,
+    "resolution": null,
+    "customfield_10233": null,
+    "customfield_12212": null,
+    "customfield_10234": null,
+    "customfield_10235": null,
+    "customfield_11711": null,
+    "customfield_10105": null,
+    "customfield_11710": null,
+    "customfield_10700": null,
+    "customfield_12208": null,
+    "customfield_11712": null,
+    "customfield_12009": null,
+    "customfield_12207": null,
+    "customfield_10229": null,
+    "customfield_12209": null,
+    "resolutiondate": null,
+    "workratio": -1,
+    "lastViewed": "2021-07-26T12:34:16.793+0000",
+    "watches": {
+      "self": "https://recruitment.endava.com/rest/api/2/issue/TMDRP-3192/watchers",
+      "watchCount": 1,
+      "isWatching": true
+    },
+    "created": "2021-07-20T08:26:29.187+0000",
+    "customfield_12200": null,
+    "customfield_10220": null,
+    "priority": {
+      "self": "https://recruitment.endava.com/rest/api/2/priority/3",
+      "iconUrl": "https://recruitment.endava.com/images/icons/priorities/medium.svg",
+      "name": "Medium",
+      "id": "3"
+    },
+    "customfield_10100": "0|i1ashj:",
+    "customfield_12202": null,
+    "customfield_10101": null,
+    "customfield_12201": null,
+    "labels": [],
+    "customfield_10224": null,
+    "customfield_11700": null,
+    "customfield_10215": {
+      "self": "https://recruitment.endava.com/rest/api/2/customFieldOption/10133",
+      "value": "Application Management",
+      "id": "10133",
+      "disabled": false
+    },
+    "customfield_10216": null,
+    "customfield_11702": "{\"fieldId\":\"11702\",\"fieldConfigId\":\"16\",\"jibrokMessageKey\":\"true\",\"jibrokMessageIsDefault\":\"true\"}",
+    "customfield_10217": null,
+    "customfield_11701": null,
+    "customfield_11503": null,
+    "customfield_10218": null,
+    "customfield_11506": null,
+    "customfield_11704": null,
+    "customfield_10219": null,
+    "customfield_11505": null,
+    "customfield_11703": "[\"JIRA_PDR_TMD_AM_TI\"]",
+    "customfield_11706": null,
+    "customfield_11705": null,
+    "customfield_11708": null,
+    "customfield_11707": null,
+    "issuelinks": [
+      {
+        "id": "308711",
+        "self": "https://recruitment.endava.com/rest/api/2/issueLink/308711",
+        "type": {
+          "id": "10302",
+          "name": "Interview-Interviews Candidate",
+          "inward": "Interviews of Candidate",
+          "outward": "Interview for Candidate",
+          "self": "https://recruitment.endava.com/rest/api/2/issueLinkType/10302"
+        },
+        "outwardIssue": {
+          "id": "285502",
+          "key": "CD-113112",
+          "self": "https://recruitment.endava.com/rest/api/2/issue/285502",
+          "fields": {
+            "summary": "test jira",
+            "status": {
+              "self": "https://recruitment.endava.com/rest/api/2/status/10102",
+              "description": "Decision made for the candidate",
+              "iconUrl": "https://recruitment.endava.com/images/icons/statuses/generic.png",
+              "name": "1.4. Pre-screen Decision",
+              "id": "10102",
+              "statusCategory": {
+                "self": "https://recruitment.endava.com/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "https://recruitment.endava.com/rest/api/2/priority/3",
+              "iconUrl": "https://recruitment.endava.com/images/icons/priorities/medium.svg",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://recruitment.endava.com/rest/api/2/issuetype/10100",
+              "id": "10100",
+              "description": "Type representing a candidate involved in the recruitment process",
+              "iconUrl": "https://recruitment.endava.com/secure/viewavatar?size=xsmall&avatarId=11202&avatarType=issuetype",
+              "name": "Candidate",
+              "subtask": false,
+              "avatarId": 11202
+            }
+          }
+        }
+      }
+    ],
+    "customfield_11709": null,
+    "assignee": null,
+    "updated": "2021-07-20T08:26:29.243+0000",
+    "status": {
+      "self": "https://recruitment.endava.com/rest/api/2/status/10109",
+      "description": "",
+      "iconUrl": "https://recruitment.endava.com/images/icons/statuses/generic.png",
+      "name": "2.1. New Interview",
+      "id": "10109",
+      "statusCategory": {
+        "self": "https://recruitment.endava.com/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "description": null,
+    "customfield_11500": null,
+    "customfield_11413": "{\"fieldId\":\"11413\",\"fieldConfigId\":\"3\",\"jibrokMessageKey\":\"true\",\"jibrokMessageIsDefault\":\"true\"}",
+    "customfield_12106": null,
+    "security": {
+      "self": "https://recruitment.endava.com/rest/api/2/securitylevel/10447",
+      "id": "10447",
+      "description": "",
+      "name": "Application Management"
+    },
+    "customfield_10404": {
+      "id": "285502",
+      "key": "CD-113112",
+      "self": "https://recruitment.endava.com/rest/api/2/issue/285502",
+      "fields": {
+        "summary": "test jira",
+        "status": {
+          "self": "https://recruitment.endava.com/rest/api/2/status/10102",
+          "description": "Decision made for the candidate",
+          "iconUrl": "https://recruitment.endava.com/images/icons/statuses/generic.png",
+          "name": "1.4. Pre-screen Decision",
+          "id": "10102",
+          "statusCategory": {
+            "self": "https://recruitment.endava.com/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://recruitment.endava.com/rest/api/2/priority/3",
+          "iconUrl": "https://recruitment.endava.com/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://recruitment.endava.com/rest/api/2/issuetype/10100",
+          "id": "10100",
+          "description": "Type representing a candidate involved in the recruitment process",
+          "iconUrl": "https://recruitment.endava.com/secure/viewavatar?size=xsmall&avatarId=11202&avatarType=issuetype",
+          "name": "Candidate",
+          "subtask": false,
+          "avatarId": 11202
+        }
+      }
+    },
+    "attachment": [],
+    "customfield_10406": null,
+    "summary": "test jira",
+    "creator": {
+      "self": "https://recruitment.endava.com/rest/api/2/user?username=dmioc",
+      "name": "dmioc",
+      "key": "JIRAUSER18300",
+      "emailAddress": "Denisa.Mioc@endava.com",
+      "avatarUrls": {
+        "48x48": "https://recruitment.endava.com/secure/useravatar?ownerId=JIRAUSER18300&avatarId=10904",
+        "24x24": "https://recruitment.endava.com/secure/useravatar?size=small&ownerId=JIRAUSER18300&avatarId=10904",
+        "16x16": "https://recruitment.endava.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER18300&avatarId=10904",
+        "32x32": "https://recruitment.endava.com/secure/useravatar?size=medium&ownerId=JIRAUSER18300&avatarId=10904"
+      },
+      "displayName": "Denisa Andreea Mioc",
+      "active": true,
+      "timeZone": "Europe/Bucharest"
+    },
+    "customfield_10240": null,
+    "reporter": {
+      "self": "https://recruitment.endava.com/rest/api/2/user?username=dmioc",
+      "name": "dmioc",
+      "key": "JIRAUSER18300",
+      "emailAddress": "Denisa.Mioc@endava.com",
+      "avatarUrls": {
+        "48x48": "https://recruitment.endava.com/secure/useravatar?ownerId=JIRAUSER18300&avatarId=10904",
+        "24x24": "https://recruitment.endava.com/secure/useravatar?size=small&ownerId=JIRAUSER18300&avatarId=10904",
+        "16x16": "https://recruitment.endava.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER18300&avatarId=10904",
+        "32x32": "https://recruitment.endava.com/secure/useravatar?size=medium&ownerId=JIRAUSER18300&avatarId=10904"
+      },
+      "displayName": "Denisa Andreea Mioc",
+      "active": true,
+      "timeZone": "Europe/Bucharest"
+    },
+    "customfield_10241": null,
+    "customfield_10000": "{}",
+    "customfield_10200": null,
+    "customfield_10201": {
+      "self": "https://recruitment.endava.com/rest/api/2/customFieldOption/10114",
+      "value": "TMD - Timisoara",
+      "id": "10114",
+      "disabled": false
+    },
+    "customfield_11412": null,
+    "customfield_12105": null,
+    "customfield_11411": null,
+    "customfield_10236": null,
+    "customfield_10237": null,
+    "customfield_10238": null,
+    "customfield_10239": null,
+    "customfield_11602": "{\"fieldId\":\"11602\",\"fieldConfigId\":\"15\",\"jibrokMessageKey\":\"true\",\"jibrokMessageIsDefault\":\"true\"}",
+    "customfield_11800": null,
+    "customfield_11409": null,
+    "customfield_11606": null,
+    "customfield_11609": null,
+    "comment": {
+      "comments": [],
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    }
+  }
+}
